@@ -9,3 +9,47 @@
    <P>Here come Natalia and Arnaud. Ready for more crazy adventures !</P>
 </BODY>
 </HTML>
+
+
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  // Copyright 1998 by Ray Stott
+  // OK to use if this copyright is included
+  // Script available at http://www.crays.com/jsc
+  var image1
+  var image1a
+  function startImageScroll1(){
+    imgNo1 = firstImg1
+    image1 = new Image(20,20)
+    image1a = new Image(20,20)
+    image1.src = "img/scrollimg1.gif"
+    image1a.src = "img/scrollimg2.gif" 
+    imageScroll1()
+    }  
+  function imageScroll1(){
+    document.images[imgNo1].src = image1a.src 
+    if(imgNo1>firstImg1)
+      document.images[imgNo1-1].src = image1.src
+    else
+      document.images[firstImg1+noImgs1-1].src = image1.src 
+    if (++imgNo1==firstImg1+noImgs1)
+      imgNo1 = firstImg1
+    var timeoutID = setTimeout("imageScroll1()", 100)
+    }
+//-->
+</SCRIPT>
+
+ 
+
+<BODY ONLOAD="startImageScroll1()"> 
+
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  firstImg1 = 3  //set this to first image in group
+  noImgs1 = 12   //set this to the number to be displayed
+  for (var i=1; i<=noImgs1; i++){
+    document.write('<IMG src="img/scrollimg1.gif" height=30 width=30>')
+//-->
+</SCRIPT>
+
+ 
