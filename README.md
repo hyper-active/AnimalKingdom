@@ -13,4 +13,4 @@ MAYBE ALL THE LANGUAGES.
 
 Let's make this a beautiful 1990's themed 2047 version of the first 2001 website to be shown in a movie back in 2014 using HTML as a way to explain unix shell, python and latex. Possibly.
 
-There used to be easter eggs here, but there left. Bring them back !
+There used to be easter eggs here, but they left. Bring them back !
