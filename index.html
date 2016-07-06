@@ -1,56 +1,20 @@
 <html>
-<HEAD>
-      <TITLE>
-         A Guide to Adventuring Through London. The Awesome Edition.
-      </TITLE>
-   </HEAD>
-<BODY>
-   <H1>Chapter 1: Hello World</H1>
-   <P><span style= “background-color: #FFFF00″>Here come Natalia and Arnaud. Ready for more crazy adventures !</span></P>
-<body>
-<script>
-var ie=document.all?1:0
-var ns6=document.getElementById&&!document.all?1:0
-var ns4=document.layers?1:0
-var posleft=1
-var idoftrembleobject="trembletext"
-var trembleobject
+  <head>
+   <title>WeekendFun</title>
+  </head>
+  <body>
+<!-- Hi Natalia! -->
+    <p>I really enjoyed going to an exhibition with you, so thought I'd have a look to see if there's anything we could go to this weekend.</p>
 
-///prepare the tremble. Many scared.
-function starttremble() {
-    if (ie || ns4 || ns6) {
-        if (ie) {
-            trembleobject=eval("document.all."+idoftrembleobject+".style")
-        }
-        if (ns6) {
-            trembleobject=idoftrembleobject
-        }
-        
-	    dotremble()
-    }
-}
-///So much tremble. Much scare.
-function dotremble() {
-    posleft*=-1
-    if (ie) {
-	    trembleobject.posLeft+=posleft  
-    }
-    if (ns6) {
-	    var newpos=parseInt(document.getElementById(trembleobject).style.left)+posleft
-        document.getElementById(trembleobject).style.left=newpos
-    }
-    var timer=setTimeout("dotremble()",20)
-}
-onload=starttremble
-</script>
-<div id="tremblebox" style="position:relative">
-<span id="trembletext" style="position:absolute;left:10px;top:30px;">
-<font size=2 color=black face=Verdana>scared cupcake ! :(</font>
-</span></div>
-<br/><br/>
-<br/>
-</body>
+<!-- Just writing some secret messages in between lines. But, they will still appear.-->
+
+  <h1>Exhibition</h1>
+    <p><a href="http://www.victoria-miro.com/">Never been to this gallery! Could be fun?</a></p>
+
+  <h1>CoolSite</h1>
+    <p><a href="https://cvdazzle.com/">Have you seen this? It's pretty cool</a></p>
+
+  </body>
 </html>
 
-
- 
+<!-- It was so hard choosing a Paddle/bat/racket. But I've ordered one now! And balls. I think they are fluorescent, so...we can play in the dark? We'll see.-->
